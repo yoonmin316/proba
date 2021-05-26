@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script>
+          function main(){
+              var e = document.getElementById('w').value;
+              var p = 0;
+              var n = 0;
+              for(var i = 0;i < e;i++){
+                a = Math.round(Math.random());
+                if(a == 1){
+                    p += 1;
+                }
+                else if(a == 0){
+                    n += 1;
+                }
+              }
+              var tem = document.getElementById('templ');
+              var st = "숫자 : "+p+"번 "+"그림 : "+n+"번"+'\n'+
+              "숫자 확률 : "+p/e+", 그림 확률 : "+n/e; 
+              tem.textContent = st;
+            }
+        </script>
+    </head>
+    <body>
+      <h1>동전 던지기 n번 시행</h1>
+      <input type="number" id="w" onchange="main();">번
+      <input type="button" value="시행" onclick="main();">
+      <div id="templ"></div>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+	Technology by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Technology Under Construction - Template Stock</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- COLORS -->
+	<link rel="stylesheet" href="css/blue.css" title="blue"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+    <link rel="alternate stylesheet" href="css/green.css" title="green">
+	<link rel="alternate stylesheet" href="css/orange.css" title="orange">
+	<link rel="alternate stylesheet" href="css/purple.css" title="purple">
+	<link rel="alternate stylesheet" href="css/slate.css" title="slate">
+	<link rel="alternate stylesheet" href="css/yellow.css" title="yellow">
+	<link rel="alternate stylesheet" href="css/red.css" title="red">
+	<link rel="alternate stylesheet" href="css/blue-munsell.css" title="blue-munsell">
+
+	<!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+	<link rel="stylesheet" href="css/demo.css">
+
+
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.js"></script>
+    <![endif]-->
+	
+</head>
+<body>
+
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div><!-- /#st-preloader -->
+
+	<section id="home-page">
+		<div class="container-fluid home-bg">
+			<div class="row">
+				<div class="col-md-12 text-center home-page">
+					<div class="main-logo">
+						<a href=""><img src="images/logo.png" alt="" /></a>
+					</div>
+					<h1>동전 N번 던지기</h1>
+					<h2 style="color: black;">
+						<input type="number" id="w" onchange="main();"><span style="color: rgb(255,255,255)">번</span>
+						<input type="button" value="시행" onclick="main();">
+					</h2>
+					<div class="container">
+						<!-- COUNTDOWN -->      
+						<div class="row">
+							<div class="col-sm-12 tk-countdown">
+								<div class="row">
+                                   
+								</div>
+							</div>
+						</div>
+						<!-- /COUNTDOWN -->
+					</div>
+					
+                    <div class="row">
+					<div class="col-sm-12 social-shear text-center">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div><!-- /.social-shear -->
+                    </div>    
+				</div>
+			</div>
+		</div>
+	</section><!-- /#home-page -->
+	
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="js/countdown.js"></script><!-- Countdown -->
+	<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script><!-- ajaxchimp -->
+	<script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
+    <script type="text/javascript" src="js/ma.js"></script>
+
+	<!-- =========================================================
+	     STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
+	============================================================== -->
+	<script type="text/javascript" src="js/styleswitcher.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+	<div class="demo-style-switch" id="switch-style">
+		<a id="toggle-switcher" class="switch-button"><i class="fa fa-cog fa-spin fa-fw"></i></a>
+		<div class="switched-options">				
+			<div class="config-title">
+				Colors :
+			</div>
+			<ul class="styles">
+				<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
+				<div class="blue">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="Purple">
+				<div class="purple">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('blue-munsell'); return false;" title="Blue Munsell">
+				<div class="blue-munsell">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="Orange">
+				<div class="orange">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('slate'); return false;" title="Slate">
+				<div class="slate">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="Green">
+				<div class="green">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="Yellow">
+				<div class="yellow">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="Red">
+				<div class="red">
+				</div>
+				</a></li>
+				
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
